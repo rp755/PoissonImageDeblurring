@@ -16,10 +16,30 @@
 
 \begin{frame}[t]{Introduction}
 Some introuction text
+
 \end{frame}
 
-\begin{frame}[t]{Review K-SVD}
+\begin{frame}[t]{Review K-SVD}{Definitions}
 Principles of K-SVD 
+    \begin{itemize}   
+        \item Want to construct the composite image, $I(x,y)$, which should agree with $T(x,y)$ and look like $S(x,y)$    
+        \item $I(x,y)$ should exactly agree with $T(x,y)$ 
+        \item $I(x,y)$ ``look like'' $S(x,y)$ inside $\Omega$
+        \item If we place directly $S$ over $T$ and smooth over the edges, the result maybe unacceptable, due to color mismatch
+    \end{itemize}
+\end{frame}
+
+\begin{frame}[t]{Review K-SVD}{Mathematical Background}
+K-SVD Mathematical background
+
+A fundamental equation of {\bf Calculus of Variations} states that, if $J$ is defined by an integral of the form:
+\[
+    J= \int F(x,f, f_x)dx
+\]
+Then $J$ has a stationary value if the following differential equation is satisfied:
+\[
+    \frac{\partial F}{\partial f} - \frac{d}{dx}\frac{\partial F}{\partial f_x}=0
+\]
 \end{frame}
 
 \begin{frame}[t]{Proposed Model}
